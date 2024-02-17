@@ -26,7 +26,7 @@ function BaseBanner({ pageContents }: { pageContents: any }) {
         </div>
 
         {pageContents.hasButtons && (
-          <div className="mt-16 flex flex-col lg:flex-row justify-center items-center gap-x-4">
+          <div className="mt-16 flex flex-col lg:flex-row justify-center items-center gap-4">
             {pageContents?.buttons?.map((button: any, index: number) => (
               <BaseButton key={index} className={button.className}>
                 {button.text}

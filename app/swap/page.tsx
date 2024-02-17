@@ -1,19 +1,19 @@
 import React from "react";
 import DefaultLayout from "@/layout/default-layout";
-import Banner from "@/assets/banner.webp";
+import Swap from "@/assets/swap.webp";
 import BaseBanner from "@/components/BaseBanner";
 
 export default function Home() {
   const pageContents = {
-    image: Banner,
-    title: "Echo Chamber",
-    subTitle: "Stake your data for rewards.",
-    accentTitle: "~APR%",
-    symbol: "$SNT",
+    image: Swap,
+    title: "Harmony Bridge",
+    subTitle: "Effortlessly swap your tokens.",
+    accentTitle: "Quick.",
+    symbol: "Secure.",
     hasButtons: true,
     buttons: [
       {
-        text: "Stake",
+        text: "Swap",
         className: "bg-sentiment-purple text-white",
       },
     ],
