@@ -32,13 +32,12 @@ export default function ConnectMetaMask() {
   }, [account]);
 
   return (
-    <div className="flex w-full justify-between px-4 py-2">
-      <div className="w-full">
+    <div className="flex w-full justify-between px-4 mb-4 bg-sentiment-purple shadow-xl py-1">
+      <div className="w-full text-white">
         Wallet:
-        <br />
         {connected && (
           <span
-            className="cursor-pointer"
+            className="cursor-pointer ml-2 text-white"
             onClick={copyAddressToClipboard}
             title="Click to copy address"
           >
@@ -46,16 +45,12 @@ export default function ConnectMetaMask() {
           </span>
         )}
       </div>
-      <div className="w-full">
-        ChainID:
-        <br />
-        {chainId}
-      </div>
+      <div className="w-full text-white">ChainID: {chainId}</div>
       <div>
         {connected ? (
           <button
             onClick={disconnect}
-            className="block w-full pl-2 pr-4 py-2 text-left text-[#F05252] hover:bg-gray-200"
+            className="block w-full text-left text-[#F05252]"
           >
             Disconnect
           </button>
