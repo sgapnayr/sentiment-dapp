@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BaseGrowingEcosystem() {
   return (
-    <div className="flex flex-col relative mt-16">
+    <div className="flex flex-col relative mt-16 w-full justify-center items-center">
       <span className="text-md font-light opacity-75 uppercase tracking-widest mb-4 w-full text-center">
         Our Ecosystem
       </span>

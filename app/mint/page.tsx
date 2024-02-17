@@ -6,11 +6,11 @@ import BaseBanner from "@/components/BaseBanner";
 export default function Home() {
   const pageContents = {
     image: Mint,
-    title: "Aura Forge",
+    title: "Our Aura Forge",
     subTitle: "Mint your own NFTs.",
     accentTitle: "Data",
     symbol: "Mine",
-    hasButtons: true,
+    hasButtons: false,
     buttons: [
       {
         text: "Mint",

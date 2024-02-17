@@ -19,7 +19,7 @@ export default function Home() {
       {
         text: "Stake",
         className:
-          "border-2 border-sentiment-purple text-sentiment-purple text-white",
+          "border-2 border-sentiment-purple text-sentiment-purple text-sentiment-purple",
       },
     ],
   };

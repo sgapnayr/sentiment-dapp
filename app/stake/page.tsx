@@ -6,8 +6,8 @@ import BaseBanner from "@/components/BaseBanner";
 export default function Home() {
   const pageContents = {
     image: Banner,
-    title: "Echo Chamber",
-    subTitle: "Stake your data for rewards.",
+    title: "The Echo Chamber",
+    subTitle: "Rewards.",
     accentTitle: "~APR%",
     symbol: "$SNT",
     hasButtons: true,
@@ -15,6 +15,11 @@ export default function Home() {
       {
         text: "Stake",
         className: "bg-sentiment-purple text-white",
+      },
+      {
+        text: "Unstake",
+        className:
+          "border-2 border-sentiment-purple text-sentiment-purple text-sentiment-purple",
       },
     ],
   };
