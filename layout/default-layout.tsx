@@ -1,5 +1,6 @@
 import BaseNavbar from "@/components/BaseNavbar";
 import React from "react";
+import ConnectMetaMask from "@/components/ConnectMetaMask";
 
 export default function DefaultLayout({
   children,
@@ -8,8 +9,9 @@ export default function DefaultLayout({
 }) {
   return (
     <div className="">
+      <ConnectMetaMask />
       <BaseNavbar />
-      <div className="p-10">{children}</div>
+      <div>{children}</div>
     </div>
   );
 }
