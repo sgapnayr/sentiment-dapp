@@ -6,15 +6,16 @@ import BaseWrapper from "./BaseWrapper";
 
 export default function BaseNavbar() {
   return (
-    <BaseWrapper>
-      <div className="w-full flex items-center justify-between">
+    <div className="w-full flex items-center justify-between px-4">
+      <div className="flex items-center gap-x-2">
         <Image
           src={SentimentLogo}
           alt="Logo"
-          className="w-12 rounded-full shadow-xl"
+          className="w-8 rounded-full shadow-xl"
         />
-        <BaseToggle />
+        <span className="font-light text-xl">Sentiment</span>
       </div>
-    </BaseWrapper>
+      <BaseToggle />
+    </div>
   );
 }

@@ -6,8 +6,8 @@ export default function BaseWrapper({
   // TEMPALTE ________________________________________________ //
   return (
     <>
-      <div className="flex w-full relative justify-start items-center px-6 flex-col no-scrollbars">
-        <div className="w-full max-w-[1440px] overflow-scroll flex justify-start items-center flex-col no-scrollbars">
+      <div className="flex w-full relative justify-start items-center px-8 flex-col no-scrollbars">
+        <div className="w-full max-w-[1040px] overflow-scroll flex justify-start items-center flex-col no-scrollbars">
           {children}
         </div>
       </div>

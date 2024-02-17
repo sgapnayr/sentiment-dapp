@@ -18,6 +18,7 @@ const config: Config = {
       "dark-background": "#1b1e29",
       "light-background": "#ffffff",
       "sentiment-purple": "#6457e5",
+      white: "#ffffff",
     },
   },
   plugins: [],
