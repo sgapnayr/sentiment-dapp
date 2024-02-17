@@ -1,10 +1,9 @@
-import Image from "next/image";
-import BaseToggle from "@/components/BaseToggle";
+import DefaultLayout from "@/layout/default-layout";
 
 export default function Home() {
   return (
-    <div>
-      <BaseToggle />
-    </div>
+    <DefaultLayout>
+      <div>Here</div>
+    </DefaultLayout>
   );
 }

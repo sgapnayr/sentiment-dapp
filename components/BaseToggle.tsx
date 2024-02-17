@@ -20,7 +20,7 @@ export default function BaseToggle() {
   return (
     <div
       onClick={toggleTheme}
-      className={`relative flex items-center bg-gray-300 h-8 w-16 rounded-full drop-shadow-md drop-shadow-inner cursor-pointer`}
+      className={`relative flex items-center dark:bg-light-background bg-gray-300 h-8 w-16 rounded-full drop-shadow-md drop-shadow-inner cursor-pointer`}
     >
       <div
         className={`${
