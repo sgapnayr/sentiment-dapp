@@ -20,12 +20,12 @@ export default function BaseToggle() {
   return (
     <div
       onClick={toggleTheme}
-      className={`relative flex items-center dark:bg-light-background bg-gray-300 h-8 w-16 rounded-full drop-shadow-md drop-shadow-inner cursor-pointer`}
+      className={`relative flex items-center dark:bg-light-background bg-gray-300 h-5 w-10 rounded-full drop-shadow-md drop-shadow-inner cursor-pointer`}
     >
       <div
         className={`${
           isDarkMode ? "right-1" : "left-1"
-        } bg-sentiment-purple h-7 w-7 rounded-full absolute transition shadow-lg`}
+        } bg-sentiment-purple h-4 w-4 rounded-full absolute transition shadow-2xl`}
       ></div>
     </div>
   );

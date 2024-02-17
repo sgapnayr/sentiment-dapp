@@ -24,7 +24,7 @@ export default function ConnectMetaMask() {
     if (account) {
       try {
         await navigator.clipboard.writeText(account);
-        alert("Address copied to clipboard!"); // Optional: Provide feedback to the user
+        alert("Address copied to clipboard!");
       } catch (err) {
         console.error("Failed to copy address: ", err);
       }
@@ -32,7 +32,7 @@ export default function ConnectMetaMask() {
   }, [account]);
 
   return (
-    <div className="flex w-full justify-between px-4 mb-4 bg-sentiment-purple shadow-xl py-1">
+    <div className="flex w-full justify-between px-4 bg-sentiment-purple shadow-xl py-1">
       <div className="w-full text-white">
         Wallet:
         {connected && (

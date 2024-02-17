@@ -28,10 +28,18 @@ export default function BaseNavbar() {
       text: "Voting",
       subTabs: [{ text: "Decentralized Voting", href: "/dao" }],
     },
+    {
+      text: "Docs",
+      subTabs: [
+        { text: "About", href: "/about" },
+        { text: "White Papers", href: "/white-papers" },
+        { text: "Our Team", href: "/team" },
+      ],
+    },
   ];
 
   return (
-    <div className="w-full flex items-center justify-between px-8 sticky top-0 z-10 py-4 bg-clip-padding backdrop-filter backdrop-blur-sm">
+    <div className="w-full flex items-center justify-between px-8 sticky top-0 z-10 py-4 bg-clip-padding backdrop-filter backdrop-blur-md shadow-md">
       <Link href={"/"} className="flex items-center gap-x-2">
         <Image
           src={SentimentLogo}
@@ -51,7 +59,7 @@ export default function BaseNavbar() {
             {hovered === route.text && (
               <div
                 onMouseEnter={() => setHovered(route.text)}
-                className="absolute bg-dark-background rounded-md top-6 flex flex-col left-1/2 transform -translate-x-1/2 overflow-hidden"
+                className="absolute rounded-md top-6 flex flex-col left-1/2 transform -translate-x-1/2 overflow-hidden w-[200px] border border-light-background/50 shadow-inner bg-sentiment-purple"
               >
                 {route.subTabs?.map((subTab, jndex) => {
                   return (
@@ -59,8 +67,8 @@ export default function BaseNavbar() {
                       className={`${
                         route.subTabs.length > 1 &&
                         jndex !== route.subTabs.length - 1 &&
-                        "border-b border-b-sentiment-purple"
-                      } opacity-50 active:opacity-25 p-4 px-8 text-center hover:opacity-100`}
+                        "border-b border-light-background"
+                      } opacity-50 active:opacity-25 p-4 px-8 text-center hover:opacity-100 font-semibold`}
                       key={jndex}
                       href={subTab.href}
                     >

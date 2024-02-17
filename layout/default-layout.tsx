@@ -10,7 +10,7 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="dark:bg-dark-background min-h-screen flex flex-col relative">
+    <div className=" min-h-screen flex flex-col relative ">
       <ConnectMetaMask />
       <BaseNavbar />
       <BaseWrapper>{children}</BaseWrapper>
