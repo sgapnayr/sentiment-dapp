@@ -25,7 +25,7 @@ export default function BaseToggle() {
       <div
         className={`${
           isDarkMode ? "right-1" : "left-1"
-        } bg-white h-7 w-7 rounded-full absolute transition shadow-lg`}
+        } bg-sentiment-purple h-7 w-7 rounded-full absolute transition shadow-lg`}
       ></div>
     </div>
   );

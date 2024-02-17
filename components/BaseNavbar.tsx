@@ -7,7 +7,7 @@ import BaseWrapper from "./BaseWrapper";
 export default function BaseNavbar() {
   return (
     <BaseWrapper>
-      <div className="w-full flex items-center justify-between px-4">
+      <div className="w-full flex items-center justify-between">
         <Image
           src={SentimentLogo}
           alt="Logo"

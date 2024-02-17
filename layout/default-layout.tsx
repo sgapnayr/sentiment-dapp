@@ -1,6 +1,7 @@
 import BaseNavbar from "@/components/BaseNavbar";
 import React from "react";
 import ConnectMetaMask from "@/components/ConnectMetaMask";
+import BaseWrapper from "@/components/BaseWrapper";
 
 export default function DefaultLayout({
   children,
@@ -8,10 +9,10 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="">
+    <div className="dark:bg-dark-background">
       <ConnectMetaMask />
       <BaseNavbar />
-      <div>{children}</div>
+      <BaseWrapper>{children}</BaseWrapper>
     </div>
   );
 }
